@@ -103,7 +103,7 @@ public class MessagingActivity extends Activity implements ServiceConnection, Me
 
     private void sendMessage() {
         String recipient = mTxtRecipient.getText().toString();
-        String textBody = mTxtTextBody.getText().toString();
+        String textBody = Aniways.encodeMessage(mTxtTextBody.getText());
         if (recipient.isEmpty()) {
             Toast.makeText(this, "No recipient added", Toast.LENGTH_SHORT).show();
             return;
