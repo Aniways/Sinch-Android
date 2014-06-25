@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:id="@+id/parent"
                 >
 
     <RelativeLayout
@@ -35,8 +36,45 @@
             android:divider="@null"
             android:dividerHeight="0dp" android:stackFromBottom="true" tools:listitem="@layout/message_left"/>
 
+	
+    <LinearLayout
+            android:id="@+id/relSendMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white" >
 
-    <RelativeLayout
+            <com.aniways.AniwaysEmoticonsOnDemandButton
+                android:id="@+id/emoticons_button"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white" />
+
+            <com.aniways.AniwaysEditText
+                android:id="@+id/txtTextBody"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-4dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/white"
+                android:hint="Message..."
+                android:maxLines="5"
+            	android:scrollbars="vertical"
+            	android:fadingEdge="vertical"
+                android:textColor="@color/dark_gray" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:background="@drawable/button_send" />
+        </LinearLayout>
+    
+    
+    <!-- RelativeLayout
             android:id="@+id/relSendMessage"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
@@ -45,7 +83,7 @@
             android:layout_alignParentBottom="true">
 
 
-        <EditText
+        <com.aniways.AniwaysEditText
                 android:layout_marginBottom="-4dp"
                 android:id="@+id/txtTextBody"
                 android:layout_width="match_parent"
@@ -66,7 +104,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_margin="4dp"
                 android:background="@drawable/button_send" />
-    </RelativeLayout>
+    </RelativeLayout-->
 
 
 </RelativeLayout>

@@ -1,5 +1,7 @@
 package com.sinch.android.rtc.sample.messaging;
 
+import com.aniways.Aniways;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +17,9 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        Aniways.init(this);
+        
         setContentView(R.layout.login);
 
         txtUsername = (EditText) findViewById(R.id.loginName);

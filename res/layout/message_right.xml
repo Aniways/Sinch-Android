@@ -20,7 +20,7 @@
                 android:paddingBottom="6dp"
                 android:textColor="@android:color/black" android:textStyle="bold"/>
 
-        <TextView
+        <com.aniways.AniwaysTextView
                 android:id="@+id/txtDate"
                 android:layout_alignParentLeft="true"
                 android:textColor="@color/sinch_purple"

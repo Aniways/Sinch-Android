@@ -13,12 +13,10 @@ import com.sinch.android.rtc.messaging.MessageClientListener;
 import com.sinch.android.rtc.messaging.WritableMessage;
 
 public class MessageService extends Service implements SinchClientListener {
-
-    private static final String APP_KEY = "enter-application-key";
-
-    private static final String APP_SECRET = "enter-application-secret";
-
-    private static final String ENVIRONMENT = "sandbox.sinch.com";
+	
+	private static final String APP_KEY = "44254807-a837-4995-a521-6b03c5a5a7d4";
+	private static final String APP_SECRET = "2aMgD3DBrUGH0GKnNK1BFg==";
+	private static final String ENVIRONMENT = "sandbox.sinch.com";
 
     public static final String INTENT_EXTRA_USERNAME = "intentExtraUsername";
 
